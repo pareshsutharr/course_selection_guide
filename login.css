@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+section .imgbx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgbx:before{
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(255deg,#00765c,#e6f4f1);
+    z-index: 1;
+    mix-blend-mode:screen;
+}
+.login-aside-page{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.login-aside-page h2{
+    font-size: 40px;
+}
+.login-aside-page h4{
+    font-size: 20px;
+
+    
+}
+
+section .imgbx img{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .contentbx{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+section .contentbx .formbx{
+    width: 50%;
+}
+section .contentbx .formbx h2{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #002c23;
+    display: inline-block;
+    letter-spacing: 1px;
+
+}
+section .contentbx .formbx .intputbx{
+    margin-bottom: 20px;
+}
+section .contentbx .formbx .intputbx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #607d8b;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+section .contentbx .formbx .intputbx input{
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size:16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 5px;
+}
+section .contentbx .formbx .intputbx input[type="submit"]{
+    background: #002c23;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .contentbx .formbx .intputbx input[type="submit"]:hover{
+    background: rgb(57, 155, 208);
+}
+section .contentbx .formbx .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 14px;
+}
+section .contentbx .formbx .intputbx p{
+    color: #607d8b;
+}
+section .contentbx .formbx .intputbx p a{
+    color: #002c23;
+}
+section .contentbx .formbx h3{
+    color: #607d8b;
+    margin: 80px 0 10px;
+    text-align: center;
+    font-weight: 500;
+}
+section .contentbx .formbx .sci{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+section .contentbx .formbx .sci li{
+    list-style: none;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 7px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #607d8b;
+}
+section .contentbx .formbx .sci li:hover{
+    background: #002c23;
+}
+
+section .contentbx .formbx .sci li img{
+    transform: scale(0.5);
+    filter: invert(1);
+}
+
+@media (max-width: 768px){
+    section .imgbx {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentbx {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    section .contentbx .formbx {
+        width: 100%;
+        padding: 40px;
+        background: rgb(255 255 255 / 80%);
+        margin: 50px;
+    }  
+    section .contentbx .formbx h3 {
+        color: #607d8b;
+        margin: 30px 0 10px;
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+
